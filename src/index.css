@@ -103,3 +103,17 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+.backhome {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.backhome .linkbutton {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
