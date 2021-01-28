@@ -1,1 +1,1 @@
-web: npx json-server --watch data/db.json --port process.env.PORT
+web: npm start
