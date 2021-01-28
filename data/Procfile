@@ -1,1 +1,2 @@
-web: npx json-server --watch data/db.json --port process.env.PORT
+web: npm install -g json-server
+web: npx json-server --watch data/db.json 
