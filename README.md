@@ -1,5 +1,7 @@
 # My First Simple App on Heroku!
 
+ps: dont delete all my posts _/\_
+
 ## https://genshins-blog.herokuapp.com/
 
 This project is done following react tutorial by thenetninja for frontend, then I built the backend rest API using node,express and mysql with crud for the posts in the blog.
