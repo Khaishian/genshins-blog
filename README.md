@@ -1,6 +1,6 @@
 # My First Simple App on Heroku!
 
-ps: dont delete all my posts _/\_
+ps: dont delete all my posts :P
 
 ## https://genshins-blog.herokuapp.com/
 
