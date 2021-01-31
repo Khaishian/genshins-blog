@@ -2,19 +2,20 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 const Create = () => {
+  const id = 0;
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
-  const [author, setAuthor] = useState("mario");
+  const [author, setAuthor] = useState("Xiao");
   const [isPending, setIsPending] = useState(false);
   const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const blog = { title, body, author };
+    const blog = { id, title, body, author };
 
     setIsPending(true);
 
-    fetch("http://localhost:8000/blogs", {
+    fetch("http://localhost:8000/blog", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog),
@@ -44,8 +45,10 @@ const Create = () => {
         ></textarea>
         <label>Blog author:</label>
         <select value={author} onChange={(e) => setAuthor(e.target.value)}>
-          <option value="mario">mario</option>
-          <option value="yoshi">yoshi</option>
+          <option value="Xiao">Xiao</option>
+          <option value="Ganyu">Ganyu</option>
+          <option value="Zhongli">Zhongli</option>
+          <option value="Hutao">Hutao</option>
         </select>
         {!isPending && <button>Add Blog</button>}
         {isPending && <button disabled>Adding blog...</button>}

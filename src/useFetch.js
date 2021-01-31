@@ -12,11 +12,14 @@ const useFetch = (url) => {
       fetch(url, { signal: abortCont.signal })
         .then((res) => {
           if (!res.ok) {
+            // console.log(res);
             throw Error("Could not fetch data");
           }
+          // console.log(res.json());
           return res.json();
         })
         .then((data) => {
+          // console.log(data);
           setData(data);
           setIsPending(false);
           setError(null);
@@ -34,6 +37,7 @@ const useFetch = (url) => {
     return () => abortCont.abort();
   }, [url]);
 
+  // console.log(data);
   return { data, isPending, error };
 };
 

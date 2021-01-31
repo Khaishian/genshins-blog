@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
   const { data: blogs, isPending, error } = useFetch(
-    "http://localhost:8000/blogs"
+    "http://localhost:8000/blog"
   );
 
   return (
