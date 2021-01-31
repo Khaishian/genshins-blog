@@ -4,12 +4,14 @@ import useFetch from "./useFetch";
 const BlogDetails = () => {
   const { id } = useParams();
   const { data: blog, error, isPending } = useFetch(
-    "http://localhost:8000/blog/" + id
+    "https://genshins-blog-backend.herokuapp.com/blog/" + id
   );
   const history = useHistory();
 
   const handleClick = (id) => {
-    fetch("http://localhost:8000/blog/" + id, { method: "DELETE" }).then(() => {
+    fetch("https://genshins-blog-backend.herokuapp.com/blog/" + id, {
+      method: "DELETE",
+    }).then(() => {
       history.push("/");
     });
   };
