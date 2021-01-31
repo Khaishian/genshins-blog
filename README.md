@@ -1,4 +1,4 @@
-# My First App on Heroku!
+# My First Simple App on Heroku!
 
 ## https://genshins-blog.herokuapp.com/
 
